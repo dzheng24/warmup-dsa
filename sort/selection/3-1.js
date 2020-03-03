@@ -10,7 +10,7 @@ function selection(array) {
     let temp = array[i];
     for (let j = i + 1; j < array.length; j++) {
       if (array[j] < array[min]) {
-        j = min;
+        min = j;
       }
     }
     array[i] = array[min];
