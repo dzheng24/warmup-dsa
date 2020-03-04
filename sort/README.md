@@ -2,7 +2,7 @@
 
 Helpful link for some visual: https://www.toptal.com/developers/sorting-algorithms
 
-## Bubble
+## Bubble Sort
 Bubble sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent element if they are in the wrong order.
 
 ```js
@@ -20,7 +20,7 @@ function bubble(array) {
 }
 ```
 
-## Selection 
+## Selection Sort
 Selection sort works by repeatedly finding the smallest element, and putting it at the beginning. 
 
 ```js
@@ -39,3 +39,23 @@ function selection(array) {
   return array;
 }
 ```
+
+## Insertion Sort
+Insertion sort is good to use when the list is nearly sorted, and the dataset is relatively small. Insertion sort builds the final sorted array one item at a time, similar to when we are sorting playing cards. 
+
+```js
+function insertionSort(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    let current = arr[i];
+    let j = i - 1;
+
+    while (j >= 0 && arr[j] > current) {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+    arr[j + 1] = current;
+  }
+  return arr;
+}
+```
+
