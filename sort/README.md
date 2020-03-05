@@ -59,3 +59,32 @@ function insertionSort(arr) {
 }
 ```
 
+## Merge Sort 
+Merge sort uses "divide and conquer" approach, meaning it will break bigger problem into smaller problems, and solve the smaller problems first, and build the list back up. This is a more popular sorting algorithm. Merge sort's big O is (n log n). 
+
+```js
+function mergeSort(array) {
+  if(array.length < 2) {
+    return array;
+  }
+  if(array.length > 1) {
+    let middle = Math.floor(array.length / 2);
+    let left = array.slice(0, middle);
+    let right = array.slice(middle);
+    return merge(mergeSort(left), mergeSort(right));
+  }
+}
+
+function merge(left, right) {
+  let array = [];
+
+  while(left.length && right.length) {
+    if(left[0] < right[0]) {
+      array.push(left.shift());
+    } else {
+      array.push(right.shift());
+    }
+  }
+  return array.concat(left.slice()).concat(right.slice());
+}
+```
