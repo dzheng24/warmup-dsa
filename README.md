@@ -4,6 +4,15 @@ The goal of this set of drills is to create muscle memory in the core operations
 
 This is solely to practice iteration and traversals of different data structures. 
 
+## Basics
+**Data Structure** - is a collection of values. 
+
+**Algorithms** - are steps/processes to manipulate these values.
+
+**Data Structure + Algorithms = Programs**
+
+**Data structures can affect the process of computers**.
+
 ## Instruction: 
 
 Process a Queue and a Stack in the correct order.
