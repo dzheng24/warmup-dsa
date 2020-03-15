@@ -1,0 +1,13 @@
+# Arrays 
+
+## Arrays
+- lookup O(1)
+- push O(1); can be O(n);
+- pop O(1)
+- unshift O(n): "realigning the indexes"
+- insert O(n)
+- delete O(n)
+
+### Static vs. Dynamic Arrays 
+- Static arrays are fixed in size
+- Dynamic arrays allow us to copy and rebuilt an array in a new location (more memory)
