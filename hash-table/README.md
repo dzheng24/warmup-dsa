@@ -9,6 +9,15 @@ The Process: A key gets sent through a hash function, then it hashes something f
 - Delete O(1);
 - Search O(1); very quick, unlike array
 
+## Hashtables are good at...
+- fast lookup (good collision resolution needed)
+- fast inserts
+- flexible keys 
+
+## Hashtables are bad at...
+- unordered
+- slow key iteration
+
 ## Hash Function? 
 A function that generates a value of fixed length for each input that it gets. 
 
