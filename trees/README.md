@@ -26,8 +26,37 @@
   - Cons:
     - No O(1) operations 
 
-## Balanced vs. Unbalanced Trees
+### Balanced vs. Unbalanced Trees
 
+### Balanced BST
+  - AVL Tree
+    - https://medium.com/basecs/the-little-avl-tree-that-could-86a3cae410c7
+  - Red Black Tree 
+    - https://medium.com/basecs/painting-nodes-black-with-red-black-trees-60eacb2be9a5
 
-- number of nodes = 2^h - 1;
-- log nodes = steps 
+## Heap (Binary Heap)
+  - Lookup: O(n)
+  - Insert: O(log n)
+  - Delete: O(log n)
+  - Great at doing comparative operations
+
+  Pros:
+    - Better than O(n)
+    - Priority
+    - Flexible Size
+    - Fast Insert
+
+  Cons:
+    - Slow lookup
+
+### Priority Queue
+  - "Think of the emergency room example"
+
+## Trie (Pre-fix Tree)
+  - A specialized tree used in searching, most often with text
+  - Usually has an empty root node 
+  - Can have multiple children
+  - **Searching for words in a dictionary, providing auto-completions**
+  - Benefit: Speed and Space 
+    - Time: O(length of word)
+    
