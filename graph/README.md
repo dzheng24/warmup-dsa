@@ -5,8 +5,15 @@ A set of values that are related in a pair fashion. "Looks like a network".
 - `Node/Vertex` are connected by `Edges`
 - Useful when it comes to modeling real life
 - Ex. represent friendships, networks, roads(one city to another)
+- neo4j is a good resource to build complex graphs 
 
 - Linked lists are a type of tree, trees are a type of graph
+
+## Pros:
+  - Relationships
+
+## Cons:
+  - Scaling is hard 
 
 ## Characteristics
 ### Directed
