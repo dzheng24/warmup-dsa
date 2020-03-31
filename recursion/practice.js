@@ -37,6 +37,7 @@ function findFactorialIterative(number) {
 // The pattern of the sequence is that each value is the sum of the 2 previous values
 // Ex. N = 5 -> 2 + 3
 
+// O(n);
 function fibonacciIterative(n) {
   let arr = [0, 1];
   for (let i = 2; i <= n; i++) {
@@ -44,8 +45,10 @@ function fibonacciIterative(n) {
   }
   return arr[n];
 }
-console.log(fibonacciIterative(8));
+// console.log(fibonacciIterative(8));
 
+
+//O(2^n)
 function fibonacciRecursive(n) {
   if (n < 2) {
     return n;
@@ -53,3 +56,23 @@ function fibonacciRecursive(n) {
   return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
 }
 // console.log(fibonacciRecursive(8));
+
+// Implement a function that reverses a string using iteration... and then use recursion.
+
+function reverseString(str) {
+  let result = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i]
+  }
+  console.log(result);
+}
+
+function reverseStringRecursive(str) {
+  debugger;
+  if (str === '') {
+    return '';
+  } else {
+    return reverseStringRecursive(str.substr(1)) + str.charAt(0);
+  }
+}
+console.log(reverseStringRecursive('yoyo master'));
