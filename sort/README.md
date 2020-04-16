@@ -88,3 +88,14 @@ function merge(left, right) {
   return array.concat(left.slice()).concat(right.slice());
 }
 ```
+
+## Quick Sort 
+Similar to merge sort, quick sort is a divide and conquer algorithm. It picks an element as a pivot, and partitions the given array around the picked pivot. The average case of quick sort is (n log n), although the worst case can be n^2. Quick sort has a better space complexity(log n) compared to merge sort (n). Quick sort is not stable, meaning the objects with the same keys may not be in the same order after being sorted. 
+
+
+## Which Sort is Best? 
+- Insertion Sort: Used with small input, and items are sorted; uses small space
+- Bubble Sort: Only used for educational purposes (very rarely used)
+- Selection Sort: Only used for educational purposes 
+- Merge Sort: Very good because of divide & conquer, O(n log n); O(n) of space complexity
+- Quick Sort: Average case of O(n log n); O(log n) of space complexity; downside is the worst case, if it has a bad pivoting point 
